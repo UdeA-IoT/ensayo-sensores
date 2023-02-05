@@ -2,8 +2,23 @@
 Ensayos con diferentes tipos de sensores
 
 
+## Sensores y actuadores
 
-Lista
+### Kits
+
+* Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
+
+![grove-kit](Grove-Starter_Kit_v2_Photo.jpg#center)
+
+* 37 sensor kit Elegoo ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf))
+
+![elegoo-kit](sensores_elegoo.jpg#center)
+
+* Landzo 37 In 1 Sensors Kit For Arduino ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
+
+![ladzo-kit](sensores_ladzo.png#center)
+
+### Sensores
 
 |Sensor|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
@@ -61,7 +76,7 @@ Lista
 |KY-021 Mini Reed Switch|||x|
 |KY-032 Avoidance Sensor|||x|
 
-Actuadores:
+### Actuadores
 
 |Actuador|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
@@ -94,3 +109,7 @@ Actuadores:
 |KY-006 Passive Buzzer|||x|
 
 
+## Enlaces 
+
+* https://spot.pcc.edu/~dgoldman/#eet101
+* 
