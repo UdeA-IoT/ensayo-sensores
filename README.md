@@ -6,7 +6,7 @@ Ensayos con diferentes tipos de sensores
 Lista
 
 |Sensor|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
-|---|---|---|
+|---|---|---|---|
 |Grove - Sound Sensor|x|||
 |Grove - Touch Sensor|x|||
 |Grove - Rotary Angle Sensor|x|||
@@ -64,7 +64,7 @@ Lista
 Actuadores:
 
 |Actuador|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
-|---|---|---|
+|---|---|---|---|
 |Grove - LCD RGB Backlight|x|||
 |Grove – Relay|x|||
 |Grove – Buzzer|x|||
