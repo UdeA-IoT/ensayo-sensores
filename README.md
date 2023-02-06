@@ -2,23 +2,54 @@
 Ensayos con diferentes tipos de sensores
 
 
+
 ## Sensores y actuadores
+
+
 
 ### Kits
 
 * Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
 
-![grove-kit](Grove-Starter_Kit_v2_Photo.jpg#center)
+<p align="center">
+  <img src="Grove-Starter_Kit_v2_Photo.jpg">
+</p>
 
 * 37 sensor kit Elegoo ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf))
 
-![elegoo-kit](sensores_elegoo.jpg#center)
+
+<p align="center">
+  <img src="sensores_elegoo.jpg">
+</p>
 
 * Landzo 37 In 1 Sensors Kit For Arduino ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
 
-![ladzo-kit](sensores_ladzo.png#center)
+<p align="center">
+  <img src="sensores_ladzo.png">
+</p>
 
 ### Sensores
+
+Los sensores son dispositivos de hardware que permiten percibir el mundo fisico (medir una o mas propiedades del entorno y enviar la información a un dispositivo IoT). Para esto, los sensore convierten la variable sensada en una señal electrica que puede ser interpretada por un dispositivo IoT. Esta señal depende del sensor, asi como el protocolo de comunicación usado para comunicarse con el dispositivo IoT. La siguiente figura (tomada del libro Practical Electronics for Investors) ilustra lo anteriormente descrito:
+
+<p align="center">
+  <img src="sensores_monk.jpg">
+</p>
+
+Existen diferentes tipos de sensores que permiten medis muchas cosas, desde propiedades naturales taltes como la temperatura del aire a interacciones fisicas como el movimiento. Algunos tipos de sensores existentes son:
+* **Sensores de temperatura**: Permiten medir la temperatura del aire o el medio en el cual se encuentran inmersos. A veces suelen venir cominados con sensores de humedad y presión en un mismo modulo.
+* **Botones**: Permiten sensar cuando estos son presionados.
+* **Sensores de luz**: Estos detectan niveles de luz. Tambien permiten medir distintos tipos de luz (de colores especificos, ultravioleta, infraroja o luz visible en general).
+* **Acelerometros**: Permiten medir el movimiento en multiples direcciones.
+* **Microfonos**: estos permiten detectar sonidos.
+
+La siguiente tabla (tomada del mismo texto), muestra algunos tipos adicionales de sensores:
+
+<p align="center">
+  <img src="tipos-sensores_monk.jpg">
+</p>
+
+
 
 |Sensor|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
@@ -108,8 +139,17 @@ Ensayos con diferentes tipos de sensores
 |KY-022 IR Receiver|||x|
 |KY-006 Passive Buzzer|||x|
 
+## Lecturas recomendadas
+
+https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators
+
+
 
 ## Enlaces 
 
 * https://spot.pcc.edu/~dgoldman/#eet101
-* 
+* https://www.accessengineeringlibrary.com/content/book/9780071771337/chapter/chapter6
+* https://learn.sparkfun.com/tutorials/tags/sensors?page=all
+* https://www.adafruit.com/category/35
+* https://imada.sdu.dk/~marco/Teaching/AY2016-2017/DM841/
+* https://github.com/UdeA-IoT/actividad-4
