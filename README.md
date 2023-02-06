@@ -60,8 +60,62 @@ Estos sensores tiene el hardware necesario para poder procesar la señal de modo
 
 ### Actuadores
 
-Continuara... [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-getting-started/lessons/3-sensors-and-actuators)
+Los actuadores son lo contrario de los sensores. Los actuadores convierten una señal electrica proveniente del dispositivo IoT en una interacción con el mundo fisico tal como la emisión de luz o sonido, o el movimiento de un motor. Algunos actuadores comunes incluyen:
+* **Led**: Estos emiten luz cuando son encendidos.
+* **Alatavoz**: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
+* **Motor paso a paso**: Este convierte una señal en una rotación definida.
+* **Relay**: Son swiches que pueden ser encendidos o apagados por medio de una señal electrica. Estos permiten que pequeños voltajes provenientes de dispositivos IoT puedan manejar altos voltajes.
+* **Pantallas**: Son uno de los actuadores mas completos y muesntran información en un display multi.segmentos. Los displays pueden variar desde display LED sencillos a monitores de video de alta resolución.
 
+La siguiente figura (tomada de [link](https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators)) muestra el uso de un actuador (Led) en un dispositivo IoT controlado por un sensor (fotocelda) para la implementación de un controlador de luz nocturna. En este caso, el dispositivo IoT funciona comparando los niveles de luz entregados por el sensor accionando el led cuando el nivel de luz detectado es demasiado bajo.
+
+<p align="center">
+  <img src="https://microsoft.github.io/IoT-For-Beginners/images/assignment-1-flow.png">
+</p>
+
+### Tipos de actuadores
+
+#### Actuadores analógicos
+
+Los actuadores analogicos toman una señal analoga y la convierten en alguna clase de interacción la cual esta basada en cambios del voltaje aplicado. Un ejemplo de este tipos son los bombillos luz regulable (dimmable light) de uso comun en los hogares, en las que el brillo depende de la cantidad de voltaje aplicado a la lampara.
+
+<p align="center">
+  <img src="https://microsoft.github.io/IoT-For-Beginners/images/dimmable-light.png">
+</p>
+
+Es importante tener en cuenta que asi como los sensores, los dispositivos IoT de la actualidad trabajan con señales digitales y no analogas; de modo que, para enviar una señal analoga, el dispositivo IoT necesita un conversor analogo digital (**ADC**) el cual puede estar integrado en el dispositivo IoT o adaptado a una placa externa que se conecta al dispositivo. El **ADC** convertira los **0s** y **1s** del dispositivo IoT a un voltaje analogo que el actuador pueda usar.
+
+#### Actuadores por modulación PWM
+
+A diferencia del uso de **ADCs**, otra forma de conversion de señales digitales a señales analogas es por medio de la modulación PWM lo cual involucra enviar una tren de pulsos los caules actuan como si fueran una señal analogica cuya amplitud, depende del ancho de los pulsos del tren. 
+
+Un ejemplo tipico del uso de PWM econsiste en el control de la velocidad de un motor. Para este caso a mayor ancho del pulso de la onda cuadrada mayor velocidad.
+
+* **Caso 1 - Ancho del 50%**: 
+  * 25 pulsos por segundo x 0.1 rotaciones por pulso = 2.5 rotaciones por segundo.
+  * 2.5 rotaciones por segundo x 60 segundos en un minuto = 150 rpm.
+  
+<p align="center">
+  <img src="https://microsoft.github.io/IoT-For-Beginners/images/pwm-motor-150rpm.png">
+</p>
+
+* **Caso 2  - Ancho del 25%**: 
+  * 25 pulsos por segundo x 0.05 rotaciones por pulso = 1.25 rotaciones por segundo.
+  * 1.25 rotaciones por segundo x 60 segundos en un minuto = 75 rpm.
+  
+<p align="center">
+  <img src="https://microsoft.github.io/IoT-For-Beginners/images/pwm-motor-75rpm.png">
+</p>
+
+
+#### Actuadores digitales
+
+De modo similar a los sensores digitales, los actuadores digitales, tienen dos estados que son controlados por un voltaje **alto** y uno **bajo** o tienen un **ADC** que les permite convertir una señal analoga en una digital. Un tipo de actuador digital es un **LED**, el cual se enciende cuando el dispositivo digital envia un voltaje alto y se apaga cuando el voltaje enviado es alto. La siguiente figura (tomada de [link](https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators)) ilustra eso:
+
+
+<p align="center">
+  <img src="https://microsoft.github.io/IoT-For-Beginners/images/led.png">
+</p>
 
 
 ### Sensores y actuadores del laboratorio
@@ -75,7 +129,7 @@ Continuara... [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-
 #### 37 sensor kit Elegoo ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf))
 
 
-<p align="center">
+<p align="center" height="50%" width="50%">
   <img src="sensores_elegoo.jpg">
 </p>
 
@@ -141,21 +195,6 @@ Continuara... [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-
 |KY-021 Mini Reed Switch|||x|
 |KY-032 Avoidance Sensor|||x|
 
-### Actuadores
-
-Los actuadores son lo contrario de los sensores. Los actuadores convierten una señal electrica proveniente del dispositivo IoT en una interacción con el mundo fisico tal como la emisión de luz o sonido, o el movimiento de un motor. Algunos actuadores comunes incluyen:
-* **Led**: Estos emiten luz cuando son encendidos.
-* **Alatavoz**: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
-* **Motor paso a paso**: Este convierte una señal en una rotación definida.
-* **Relay**: Son swiches que pueden ser encendidos o apagados por medio de una señal electrica. Estos permiten que pequeños voltajes provenientes de dispositivos IoT puedan manejar altos voltajes.
-* **Pantallas**: Son uno de los actuadores mas completos y muesntran información en un display multi.segmentos. Los displays pueden variar desde display LED sencillos a monitores de video de alta resolución.
-
-La siguiente figura (tomada de [link](https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators)) muestra el uso de un actuador (Led) en un dispositivo IoT controlado por un sensor (fotocelda) para la implementación de un controlador de luz nocturna. En este caso, el dispositivo IoT funciona comparando los niveles de luz entregados por el sensor accionando el led cuando el nivel de luz detectado es demasiado bajo.
-
-<p align="center">
-  <img src="https://microsoft.github.io/IoT-For-Beginners/images/assignment-1-flow.png">
-</p>
-
 
 |Actuador|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
@@ -191,8 +230,6 @@ La siguiente figura (tomada de [link](https://microsoft.github.io/IoT-For-Beginn
 
 https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators
 
-
-
 ## Enlaces 
 
 * https://spot.pcc.edu/~dgoldman/#eet101
@@ -201,3 +238,4 @@ https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sens
 * https://www.adafruit.com/category/35
 * https://imada.sdu.dk/~marco/Teaching/AY2016-2017/DM841/
 * https://github.com/UdeA-IoT/actividad-4
+* https://www.hackster.io/seeed
