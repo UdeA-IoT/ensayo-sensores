@@ -1,8 +1,10 @@
-# Ensayos varios
-Ensayos con diferentes tipos de sensores
+# Introducción breve al manejo de sensores
 
+En la presente sección se decribe de modo muy introductorio aspectos teoricos sobre sensores y se muestra a modo de inventario los sensores disponibles en el laboratorio. Finalmente, se abordan algunos ejemplos copiados y/o adaptados de internet con el fin de comprender el funcionamiento de algunos de los sensores disponibles y darle los animos y la confianza necesaria para que cacharree con lo que hay, pues esta es la manera como realmente se aprende.
 
 ## Sensores y actuadores
+
+El papel principal de estos elementos es permitir la interación del dispositivo IoT con el medio ambiente, son analogos a los sentidos y perifericos en los seres vivos y en los sistemas de computo respectivamente.
 
 ### Sensores
 
@@ -117,27 +119,31 @@ De modo similar a los sensores digitales, los actuadores digitales, tienen dos e
   <img src="https://microsoft.github.io/IoT-For-Beginners/images/led.png">
 </p>
 
-
 ### Sensores y actuadores del laboratorio
 
-#### Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
+El laboratorio cuenta con tres kits de sensores los cules se muestrana continuación:
+
+
+* **Grove - Starter Kit v3** ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/)):
 
 <p align="center">
   <img src="Grove-Starter_Kit_v2_Photo.jpg">
 </p>
 
-#### 37 sensor kit Elegoo ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf))
+* **37 sensor kit Elegoo** ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf)):
 
 
 <p align="center">
-  <img width="80%" src="sensores_elegoo.jpg">
+  <img width="70%" src="sensores_elegoo.jpg">
 </p>
 
-#### Landzo 37 In 1 Sensors Kit For Arduino ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
+* **Landzo 37 In 1 Sensors Kit For Arduino** ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/)):
 
 <p align="center">
   <img src="sensores_ladzo.png">
 </p>
+
+La siguiente tabla resume la **lista de sensores** disponibles en cada uno de los tres kids descritos:
 
 |Sensor|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
@@ -195,6 +201,7 @@ De modo similar a los sensores digitales, los actuadores digitales, tienen dos e
 |KY-021 Mini Reed Switch|||x|
 |KY-032 Avoidance Sensor|||x|
 
+Por otro lado, la siguiente tabla **muestra una lista** de actuadores disponibles en cada kid:
 
 |Actuador|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
@@ -228,7 +235,7 @@ De modo similar a los sensores digitales, los actuadores digitales, tienen dos e
 
 ## Lecturas recomendadas
 
-https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators
+La gran mayoria de la información aqui tomada se saco del curso [IoT-For-Beginners](https://microsoft.github.io/IoT-For-Beginners/#/) de Microsoft. Si quiere ir mas alla, la lectura y comprensión de lo que aqui se enseña es obligada.
 
 ## Enlaces 
 
