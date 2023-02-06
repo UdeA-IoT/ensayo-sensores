@@ -233,6 +233,32 @@ Por otro lado, la siguiente tabla **muestra una lista** de actuadores disponible
 |KY-022 IR Receiver|||x|
 |KY-006 Passive Buzzer|||x|
 
+## Ejemplos
+
+### Sensores de posicion
+
+Por ahora vamos a clasificar los ejemplos siguiendo la siguiente clasificación sencilla:
+
+### Sensores de temperatura
+
+En construcción...
+
+### Sensores de ultrasonido
+
+En construcción...
+
+### Sensores de proximidad o movimiento
+
+En construcción...
+
+### Sensores magneticos
+
+En construcción...
+
+### Sensores ambientales
+
+En construcción...
+
 ## Lecturas recomendadas
 
 La gran mayoria de la información aqui tomada se saco del curso [IoT-For-Beginners](https://microsoft.github.io/IoT-For-Beginners/#/) de Microsoft. Si quiere ir mas alla, la lectura y comprensión de lo que aqui se enseña es obligada.
