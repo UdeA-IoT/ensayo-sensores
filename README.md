@@ -2,31 +2,7 @@
 Ensayos con diferentes tipos de sensores
 
 
-
 ## Sensores y actuadores
-
-
-
-### Kits
-
-* Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
-
-<p align="center">
-  <img src="Grove-Starter_Kit_v2_Photo.jpg">
-</p>
-
-* 37 sensor kit Elegoo ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf))
-
-
-<p align="center">
-  <img src="sensores_elegoo.jpg">
-</p>
-
-* Landzo 37 In 1 Sensors Kit For Arduino ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
-
-<p align="center">
-  <img src="sensores_ladzo.png">
-</p>
 
 ### Sensores
 
@@ -50,6 +26,64 @@ La siguiente tabla (tomada del mismo texto), muestra algunos tipos adicionales d
 </p>
 
 
+### Tipos de sensores
+
+#### Sensores analógicos
+
+Son el tipo de sensores mas basicos que existen. Estos sensores son alimentados con voltaje (voltaje de alimentación) desde el dispositivo IoT y devolvuelven este para su lectura un voltaje cuya variación depende de la variable medida tal y como lo muestra la siguiente figura (tomada del siguiente [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-getting-started/lessons/3-sensors-and-actuators)).
+
+<p align="center">
+  <img src="https://github.com/microsoft/IoT-For-Beginners/raw/main/images/potentiometer.png">
+</p>
+
+Debido a que los dispositivos IoT son digitales, los valores obtenidos al usar sensores analogos deben ser convertidos a una señal digital antes de ser procesados de modo que muchos dispositivos IoT tienen **Conversores analogo a digital (ADCs)** para convertir señales analogas a representaciones digitales de su valor. En caso de que el dispositivo no tenga **ADCs**, estos pueden ser conectados al dispositivo como un modulo exterior (Como el caso de la rPi). 
+
+Cuando un sensor esta conectado a un dispositivo IoT, el valor analogo leido debe ser convertido a una representación digital la cual depende del rango de variación de la señal analoga de entrada y del tipo de dispositivo. El rango de valores de un **ADC** depende del numero de bits de resolución, por ejemplo, si un **ADC** es de 10 bits, el rango de valores estara entre 0-1023.
+
+#### Sensores digitales
+ 
+Los sensores digitales detectan cambios de voltaje que solo pueden tomar dos posibles valores (alto y bajo). El tipo mas simple de sensor de este tipo es un **boton** o **switch**, el cual es un sensor con dos estados **ON** y **OFF** tal y como se muestra en la siguiente figura (tomada del siguiente [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-getting-started/lessons/3-sensors-and-actuators))
+
+
+<p align="center">
+  <img src="https://github.com/microsoft/IoT-For-Beginners/raw/main/images/button.png">
+</p>
+
+#### Sensores inteligentes
+
+Estos sensores tiene el hardware necesario para poder procesar la señal de modo que pueden ser conectados directamente al dispositivo IoT. Un caso tipico de estos sensores consisten en los sensores de temperatura que vienen integrados con un **ADC** de modo que los valores analogos leidos son convertidos en señales digitales que se envian al dispositivo IoT como datos. Enviar datos en forma digital permite que los sensores sean mas complejos y que envien datos mas detallados, incluso encriptados si la seguridad es importante, un sensor de este tipo lo constituye una camara, la cual captura una imagen y envia los datos de esta al dispositivo IoT empleando un formato digital comprimido como el JPEG. La siguiente figura (tomada del siguiente [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-getting-started/lessons/3-sensors-and-actuators)) ilustra esto:
+
+
+<p align="center">
+  <img src="https://github.com/microsoft/IoT-For-Beginners/raw/main/images/temperature-as-digital.png">
+</p>
+
+### Actuadores
+
+Continuara... [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-getting-started/lessons/3-sensors-and-actuators)
+
+
+
+### Sensores y actuadores del laboratorio
+
+#### Grove - Starter Kit v3 ([link](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/))
+
+<p align="center">
+  <img src="Grove-Starter_Kit_v2_Photo.jpg">
+</p>
+
+#### 37 sensor kit Elegoo ([link](https://spot.pcc.edu/~dgoldman/labs/37SENSORKIT.pdf))
+
+
+<p align="center">
+  <img src="sensores_elegoo.jpg">
+</p>
+
+#### Landzo 37 In 1 Sensors Kit For Arduino ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
+
+<p align="center">
+  <img src="sensores_ladzo.png">
+</p>
 
 |Sensor|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
