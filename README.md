@@ -130,7 +130,7 @@ De modo similar a los sensores digitales, los actuadores digitales, tienen dos e
 
 
 <p align="center">
-  <img width="70%" src="sensores_elegoo.jpg">
+  <img width="80%" src="sensores_elegoo.jpg">
 </p>
 
 #### Landzo 37 In 1 Sensors Kit For Arduino ([link](https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/))
