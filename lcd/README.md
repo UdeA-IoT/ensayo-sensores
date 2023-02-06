@@ -19,7 +19,7 @@
 ### Conexión
 
 <p align="center">
-  <img src="arduino/dh11-arduino_bb.jpg">
+  <img src="arduino/">
 </p>
 
 ### Test del programa

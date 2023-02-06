@@ -143,6 +143,20 @@ Continuara... [link](https://github.com/microsoft/IoT-For-Beginners/tree/main/1-
 
 ### Actuadores
 
+Los actuadores son lo contrario de los sensores. Los actuadores convierten una señal electrica proveniente del dispositivo IoT en una interacción con el mundo fisico tal como la emisión de luz o sonido, o el movimiento de un motor. Algunos actuadores comunes incluyen:
+* **Led**: Estos emiten luz cuando son encendidos.
+* **Alatavoz**: Este elemento emite sonido basado en la señal que recibe, desde un buzzer basico a un parlante de audio puede ser empleado en la reproducción de musica.
+* **Motor paso a paso**: Este convierte una señal en una rotación definida.
+* **Relay**: Son swiches que pueden ser encendidos o apagados por medio de una señal electrica. Estos permiten que pequeños voltajes provenientes de dispositivos IoT puedan manejar altos voltajes.
+* **Pantallas**: Son uno de los actuadores mas completos y muesntran información en un display multi.segmentos. Los displays pueden variar desde display LED sencillos a monitores de video de alta resolución.
+
+La siguiente figura (tomada de [link](https://microsoft.github.io/IoT-For-Beginners/#/1-getting-started/lessons/3-sensors-and-actuators/README?id=interact-with-the-physical-world-with-sensors-and-actuators)) muestra el uso de un actuador (Led) en un dispositivo IoT controlado por un sensor (fotocelda) para la implementación de un controlador de luz nocturna. En este caso, el dispositivo IoT funciona comparando los niveles de luz entregados por el sensor accionando el led cuando el nivel de luz detectado es demasiado bajo.
+
+<p align="center">
+  <img src="https://microsoft.github.io/IoT-For-Beginners/images/assignment-1-flow.png">
+</p>
+
+
 |Actuador|Grove - Starter Kit v3|37 sensor kit Elegoo|Landzo 37 In 1 Sensors Kit For Arduino|
 |---|---|---|---|
 |Grove - LCD RGB Backlight|x|||
