@@ -136,6 +136,8 @@ La siguiente figura muestra la salida en el monitor serial cuando el programa es
 
 Empleando el siguiente [link](https://www.tinkercad.com/embed/ezldBrgTwI1?editbtn=1) puede simular el ejemplo para entenderlo antes de montarlo.
 
+> **Nota**: Este ejemplo se muestra adaptado en el ESP32, para analizarlo siga el siguiente [link](../esp32/README.md)
+
 ## Ejemplo 2
 
 ### Descripción y componentes
