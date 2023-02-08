@@ -189,21 +189,10 @@ La siguiente figura muestra la conexión entre los modulos de hardware y el ardu
 
 ### Programa
 
-Toma como base solo la parte de led del ejemplo, (Hacer enfasis en el uso de funciones para facilitar la condificación del programa del arduino)...
+El programa que se ejecuta en el arduino se muestra a continuación, observe el uso de funciones para facilitar la modularización del código:
 
 ```ino
 /*
-  SparkFun Inventor’s Kit
-  Circuit 3B-Distance Sensor
-
-  Control the color of an RGB LED using an ultrasonic distance sensor.
-
-  This sketch was written by SparkFun Electronics, with lots of help from the Arduino community.
-  This code is completely free for any use.
-
-  View circuit diagram and instructions at: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40
-  Download drawings and code at: https://github.com/sparkfun/SIK-Guide-Code
-
   Hardware Connections:
     Arduino | HC-SR04
     -------------------
@@ -229,10 +218,7 @@ const int bluePin = 6;            //pin to control the blue LED inside the RGB L
 
 float distance = 0;               //stores the distance measured by the distance sensor
 
-void setup()
-{
-  Serial.begin (9600);        //set up a serial connection with the computer
-
+void setup() {
   pinMode(trigPin, OUTPUT);   //the trigger pin will output pulses of electricity
   pinMode(echoPin, INPUT);    //the echo pin will measure the duration of pulses coming back from the distance sensor
 
@@ -276,8 +262,7 @@ void loop() {
 //------------------FUNCTIONS-------------------------------
 
 //RETURNS THE DISTANCE MEASURED BY THE HC-SR04 DISTANCE SENSOR
-float getDistance()
-{
+float getDistance() {
   float echoTime;                   //variable to store the time it takes for a ping to bounce off an object
   float calculatedDistance;         //variable to store the distance calculated from the echo time
 
@@ -297,37 +282,120 @@ float getDistance()
 
 ### Ejecución y prueba
 
-
-
 ## Ejemplo 3
 
-En construcción...
+### Descripción y componentes
 
-### Componentes
+En este ejemplo se utiliza un sensor de ultrasonido para detectar la presencia de un objeto que se acerca. De acuerdo a la a la distancia del objeto; el color, el buzzer y el servomotor reaccionaran de la siguiente manera:
+* Si el objeto esta muy cerca, el led cambiara a rojo, el buzzer sonara y el motor vibrara.
+* Si la distancia es intermedia, el color del led será amarillo.
+* Si la distancia es larga, el color del led será verde.
 
-En construcción...
+Este ejemplo fue tomado de: **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion Alarm** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-3c-motion-alarm)) y montado en el arduino UNO. La siguiente es la lista de componentes empleados:
 
-### Descripción
+<p align="center">
 
-Este ejemplo fue tomado de: **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion Alarm** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-3c-motion-alarm)) y montado en el arduino 1
+|Componentes|Cantidad|
+|---|---|
+|Arduino UNO|1|
+|Sensor de ultrasonido HC-SR04|1|
+|Led RGB|1|
+|Buzzer|1|
+|Servo motor|1|
 
+</p>
+
+### Conexión
+
+La conexión entre los componentes de hardware con el arduino se describe en las siguientes tablas:
+
+* Conexión entre el sensor de ultrasonido y el arduino UNO:
+  
+<p align="center">
+
+|Arduino|HC-SR04|
+|---|---|
+|5V|VCC|
+|11|Trig|
+|12|Echo|
+|GND|GND|
+
+</p>
+
+* Conexión entre el led RGB y el arduino UNO:
+
+<p align="center">
+
+|Arduino|Led RGB|
+|---|---|
+|3|R|
+|5|G|
+|6|B|
+|GND|-|
+
+</p>
+
+* Conexión entre el buzzer y el arduino UNO:
+
+<p align="center">
+
+|Arduino|Buzzer|
+|---|---|
+|10|S|
+|GND|-|
+
+</p>
+
+El pin de la mitad del buzzer no se usa.
+
+* Conexión entre el buzzer y el arduino UNO:
+
+<p align="center">
+
+|Arduino|Servo Motor|
+|---|---|
+| 9 |   Control (Amarillo) |
+| 5V  |   VCC (Rojo) |
+| GND |   GND (Negro) |
+
+</p>
+
+La siguiente figura muestra la conexión entre los diferentes componentes de acuerdo a las tablas anteriores:
+
+<p align="center">
+  <img src="3/arduino_ultrasonido3_bb.jpg">
+</p>
 
 ### Programa
 
-Toma como base solo la parte de led del ejemplo, (Hacer enfasis en el uso de funciones para facilitar la condificación del programa del arduino)...
-
 ```ino
 /*
-  SparkFun Inventor’s Kit
-  Circuit 3C-Motion Alarm
+    Hardware Connections:
 
-  Control the color of an RGB LED using an ultrasonic distance sensor. When an object is close to the sensor, buzz the buzzer and wiggle the servo motor.
+    Arduino | HC-SR04
+    -------------------
+      5V    |   VCC
+      11    |   Trig
+      12    |   Echo
+      GND   |   GND
 
-  This sketch was written by SparkFun Electronics, with lots of help from the Arduino community.
-  This code is completely free for any use.
+    Arduino | RGB led
+    -------------------
+      3     |   R
+      5     |   G
+      6     |   B
+      GND   |   -
 
-  View circuit diagram and instructions at: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40
-  Download drawings and code at: https://github.com/sparkfun/SIK-Guide-Code
+    Arduino | Buzzer
+    -------------------
+      10    |   S
+      GND   |   -
+  
+    Arduino | Servo motor
+    -------------------
+      9     |   Control (Amarillo)
+      5V    |   VCC (Rojo)
+      GND   |   GND (Negro)  
 */
 
 #include <Servo.h>                //include the servo library
@@ -425,12 +493,6 @@ float getDistance()
   return calculatedDistance;              //send back the distance that was calculated
 }
 ```
-
-### Conexión
-
-<p align="center">
-  <img src="3/arduino_ultrasonido3_bb.jpg">
-</p>
 
 # Enlaces
 
