@@ -1,6 +1,5 @@
 # Implementación del sensor de ultrasonido en arduino
 
-
 **Usos**
 
 Distance sensors are amazing tools with all kinds of uses. They can sense the presence of an object, they can be used in experiments to calculate speed and acceleration, and they can be used in robotics to avoid obstacles. This circuit will walk you through the basics of using an ultrasonic distance sensor, which measures distance using sound waves!
@@ -135,8 +134,7 @@ La siguiente figura muestra la salida en el monitor serial cuando el programa es
   <img src="1/ultrasonido_serial.png">
 </p>
 
-<iframe width="725" height="453" src="https://www.tinkercad.com/embed/ezldBrgTwI1?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
+Empleando el siguiente [link](https://www.tinkercad.com/embed/ezldBrgTwI1?editbtn=1) puede simular el ejemplo para entenderlo antes de montarlo.
 
 ## Ejemplo 2
 
@@ -284,6 +282,8 @@ float getDistance() {
 ```
 
 ### Ejecución y prueba
+
+Para comprender ver el programa anterior en acción puede usar el siguiente [link](https://www.tinkercad.com/embed/bZb8yAtFsW0?editbtn=1) para simular el funcionamiento del circuito.
 
 ## Ejemplo 3
 
@@ -497,7 +497,12 @@ float getDistance()
 }
 ```
 
-# Enlaces
+## Ejecución y prueba
+
+Para comprender ver el programa anterior realice la simulación de este siguiendo el siguiente [link](https://www.tinkercad.com/embed/328sYYW4WTl?editbtn=1).
+
+
+## Enlaces
 
 1. https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
 2. https://learn.adafruit.com/ultrasonic-sonar-distance-sensors
