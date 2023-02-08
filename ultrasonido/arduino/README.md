@@ -8,13 +8,11 @@ Distance sensors are amazing tools with all kinds of uses. They can sense the pr
 
 ## Ejemplo 1
 
-### Descripción
+### Descripción y componentes
 
 En el siguiente ejemplo muestra, usando el monitor serial, la distancia en centimetros y pulgadas.
 
 Este ejemplo fue adaptado (copiado y modificado) de  **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/project-3-motion)) y montado en el arduino UNO.
-
-### Componentes
 
 La siguiente tabla muestra los componentes principales del circuito a montar:
 
@@ -26,6 +24,8 @@ La siguiente tabla muestra los componentes principales del circuito a montar:
 |Sensor de ultrasonido HC-SR04|1|
 
 </p>
+
+### Conexión
 
 La conexión entre el sensor de ultrasonido se muestra en la siguiente tabla:
 
@@ -137,15 +137,55 @@ La siguiente figura muestra la salida en el monitor serial cuando el programa es
 
 ## Ejemplo 2
 
-En construcción...
+### Descripción y componentes
 
-### Componentes
+En este ejemplo adaptado de **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/project-3-motion)) se controla el control de un Led RGB de acuerdo a la distancia medida por un sensor de ultrasonido.
 
-En construcción...
+La siguiente tabla muestra los componentes principales del circuito a montar:
 
-### Descripción
+<p align="center">
 
-En construcción...
+|Componentes|Cantidad|
+|---|---|
+|Arduino UNO|1|
+|Sensor de ultrasonido HC-SR04|1|
+|Led RGB|1|
+
+### Conexión
+
+La conexión entre los componentes de hardware se describe en las siguientes tablas:
+
+* Conexión entre el sensor de ultrasonido y el arduino UNO:
+  
+<p align="center">
+
+|Arduino|HC-SR04|
+|---|---|
+|5V|VCC|
+|11|Trig|
+|12|Echo|
+|GND|GND|
+
+</p>
+
+* Conexión entre el led RGB y el arduino UNO:
+
+<p align="center">
+
+|Arduino|Led RGB|
+|---|---|
+|3|R|
+|5|G|
+|6|B|
+|GND|-|
+
+</p>
+
+La siguiente figura muestra la conexión entre los modulos de hardware y el arduino:
+
+<p align="center">
+  <img src="2/arduino_ultrasonido2_bb.jpg">
+</p>
 
 ### Programa
 
@@ -163,6 +203,21 @@ Toma como base solo la parte de led del ejemplo, (Hacer enfasis en el uso de fun
 
   View circuit diagram and instructions at: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40
   Download drawings and code at: https://github.com/sparkfun/SIK-Guide-Code
+
+  Hardware Connections:
+    Arduino | HC-SR04
+    -------------------
+      5V    |   VCC
+      11    |   Trig
+      12    |   Echo
+      GND   |   GND
+
+    Arduino | RGB led
+    -------------------
+      3    |   R
+      5    |   G
+      6    |   B
+      GND  |   -
 */
 
 const int trigPin = 11;           //connects to the trigger pin on the distance sensor
@@ -240,11 +295,9 @@ float getDistance()
 }
 ```
 
-### Conexión
+### Ejecución y prueba
 
-<p align="center">
-  <img src="2/arduino_ultrasonido2_bb.jpg">
-</p>
+
 
 ## Ejemplo 3
 
