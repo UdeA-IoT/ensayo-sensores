@@ -135,6 +135,9 @@ La siguiente figura muestra la salida en el monitor serial cuando el programa es
   <img src="1/ultrasonido_serial.png">
 </p>
 
+<iframe width="725" height="453" src="https://www.tinkercad.com/embed/ezldBrgTwI1?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+
 ## Ejemplo 2
 
 ### Descripción y componentes
@@ -501,3 +504,6 @@ float getDistance()
 3. https://ubidots.com/blog/build-a-tank-volume-reader-in-under-30/
 4. https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-3b-distance-sensor
 5. https://github.com/sparkfun/HC-SR04_UltrasonicSensor
+6. https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html
+7. https://www.seeedstudio.com/blog/2019/12/23/distance-sensors-types-and-selection-guide/
+8. https://www.hackster.io/490770/smart-mobility-stick-fd06fa
