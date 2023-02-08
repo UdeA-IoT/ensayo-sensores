@@ -1,21 +1,55 @@
 # Implementación del sensor de ultrasonido en arduino
 
 
+**Usos**
+
+Distance sensors are amazing tools with all kinds of uses. They can sense the presence of an object, they can be used in experiments to calculate speed and acceleration, and they can be used in robotics to avoid obstacles. This circuit will walk you through the basics of using an ultrasonic distance sensor, which measures distance using sound waves!
+
+
 ## Ejemplo 1
-
-En construcción...
-
-### Componentes
-
-En construcción...
 
 ### Descripción
 
-En construcción...
+En el siguiente ejemplo muestra, usando el monitor serial, la distancia en centimetros y pulgadas.
+
+Este ejemplo fue adaptado (copiado y modificado) de  **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/project-3-motion)) y montado en el arduino UNO.
+
+### Componentes
+
+La siguiente tabla muestra los componentes principales del circuito a montar:
+
+<p align="center">
+
+|Componentes|Cantidad|
+|---|---|
+|Arduino UNO|1|
+|Sensor de ultrasonido HC-SR04|1|
+
+</p>
+
+La conexión entre el sensor de ultrasonido se muestra en la siguiente tabla:
+
+<p align="center">
+
+|Arduino|HC-SR04|
+|---|---|
+|5V|VCC|
+|7|Trig|
+|8|Echo|
+|GND|GND|
+
+</p>
+
+La siguiente figura muestra la conexión entre los componentes:
+
+<p align="center">
+  <img src="1/arduino_ultrasonido_bb.jpg">
+</p>
+
 
 ### Programa
 
-Este ejemplo fue tomado de: **SparkFun Inventor's Kit Experiment Guide - Project 3: Motion** ([link](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/project-3-motion)) y montado en el arduino 1
+A continuación se muestra el programa que se ejecuta en el Arduino:
 
 ```ino
 /**
@@ -93,13 +127,13 @@ void loop() {
 }
 ```
 
-### Conexión
+### Test del programa
+
+La siguiente figura muestra la salida en el monitor serial cuando el programa es ejecutado:
 
 <p align="center">
-  <img src="1/arduino_ultrasonido_bb.jpg">
+  <img src="1/ultrasonido_serial.png">
 </p>
-
-### Test del programa
 
 ## Ejemplo 2
 
@@ -345,3 +379,10 @@ float getDistance()
   <img src="3/arduino_ultrasonido3_bb.jpg">
 </p>
 
+# Enlaces
+
+1. https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
+2. https://learn.adafruit.com/ultrasonic-sonar-distance-sensors
+3. https://ubidots.com/blog/build-a-tank-volume-reader-in-under-30/
+4. https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-3b-distance-sensor
+5. https://github.com/sparkfun/HC-SR04_UltrasonicSensor
