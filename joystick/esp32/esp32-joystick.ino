@@ -1,5 +1,5 @@
-const int pinX = 2;    //  P0 (GPIO00 - ADC11)
-const int pinY = 4;    //  P2 (GPIO02 - ADC12)
+const int pinX = 2;    //  P2 (GPIO02 - ADC11)
+const int pinY = 4;    //  P4 (GPIO04 - ADC12)
 const int pinSW = 15;  //  P15 (GPIO15)
 int valueX = 0;        //  Analog
 int valueY = 0;        //  Analog
